@@ -7,7 +7,7 @@ const ContactFrom = () => {
     });
     return (
         <div className="contact-form" data-aos="fade-up" data-aos-delay="300">
-            <form action="https://getform.io/f/a17a2715-d7ee-4ac4-8fcb-12f1eed43b2c" method="POST">
+            <form action="https://getform.io/f/0550ea72-57e1-4682-8e2b-38ed7f8c63f2" method="POST">
                 <div className="row mb-n6">
                     <div className="col-md-6 col-12 mb-6">
                         <input type="text" placeholder="Your Name *" name="name" ref={register({ required: 'Name is required' })} />

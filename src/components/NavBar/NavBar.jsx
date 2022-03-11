@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -20,6 +20,10 @@ const NavBar = () => {
                 <li>
                     <NavLink to={process.env.PUBLIC_URL + "/service"}><span className="menu-text">Services</span></NavLink>
                 </li>
+                <li>
+                    <NavLink to={process.env.PUBLIC_URL + "/project"}><span className="menu-text">Projects</span></NavLink>
+                </li>
+                {/*
                 <li className="has-children">
                     <NavLink to={process.env.PUBLIC_URL + "/work"}><span className="menu-text">Work</span></NavLink>
                     <span className="menu-toggle"><i className="far fa-angle-down"></i></span>
@@ -37,6 +41,7 @@ const NavBar = () => {
                         <li><NavLink to={process.env.PUBLIC_URL + `/blog-details/1`}><span className="menu-text">Blog Details</span></NavLink></li>
                     </ul>
                 </li>
+                */}
                 <li>
                     <NavLink to={process.env.PUBLIC_URL + "/contact"}><span className="menu-text">Contact Us</span></NavLink>
                 </li>

@@ -11,11 +11,11 @@ import ScrollToTop from '../components/ScrollToTop.jsx';
 const Contact = () => {
     return (
         <React.Fragment>
-            <SEO title="Exomac || Contact" />
+            <SEO title="BP Tech - Contact" />
             <Header />
-            <Breadcrumb 
+            <Breadcrumb
                 image="images/bg/breadcrumb-bg-five.jpg"
-                title="We are an agency located in New York"
+                title="Provide solutions for personal studies"
                 content="Home"
                 contentTwo="Contact Us"
             />

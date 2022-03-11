@@ -10,19 +10,19 @@ const WorkContainer = () => {
 
                 <SectionTitle
                     headingOption="title fz-32"
-                    title="Crafting effective digital marketing, web development, <br> video content and communication design"
+                    title="Crafting web and mobile development"
                 />
 
                 <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 mb-n6">
 
                     {WorkData && WorkData.map((single, key) => {
-                            return(
-                                <div key={key} className="col mb-6" data-aos="fade-up" data-aos-delay="300">
-                                    <WorkItemTwo classOption="box-border" data={single} key={key} />
-                                </div>
-                            ); 
+                        return (
+                            <div key={key} className="col mb-6" data-aos="fade-up" data-aos-delay="300">
+                                <WorkItemTwo classOption="box-border" data={single} key={key} />
+                            </div>
+                        );
                     })}
-                    
+
                 </div>
 
             </div>

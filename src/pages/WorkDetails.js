@@ -10,18 +10,18 @@ import ScrollToTop from '../components/ScrollToTop.jsx';
 
 
 
-const WorkDetails = ({match: {params: {id}}}) => {
+const WorkDetails = ({ match: { params: { id } } }) => {
     const workId = parseInt(id, 10)
     const data = WorkData.filter(work => work.id === workId);
     return (
         <React.Fragment>
-            <SEO title="Exomac || Work Details" />
+            <SEO title="BPTech - Project Details" />
             <Header />
-            <Breadcrumb 
+            <Breadcrumb
                 image="images/bg/breadcrumb-bg-two.jpg"
                 title={data[0]?.title}
                 content="Home"
-                contentTwo="Work"
+                contentTwo="Projects"
             />
             <WorkDetailsContainer data={data[0]} />
             <Footer />
@@ -33,7 +33,7 @@ const WorkDetails = ({match: {params: {id}}}) => {
 WorkDetails.propTypes = {
     match: PropTypes.shape({
         params: PropTypes.shape({
-            id: PropTypes.oneOfType([    
+            id: PropTypes.oneOfType([
                 PropTypes.string,
                 PropTypes.number
             ])

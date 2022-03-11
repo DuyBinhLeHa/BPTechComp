@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import {useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
 import contactData from '../../data/contactInfo/contactInfo.json';
 import SectionTitle from '../../components/SectionTitles/SectionTitle';
 import ContactInfoItem from '../../components/ContactInfo/ContactInfoItem.jsx';
@@ -10,9 +10,9 @@ const ContactInformation = ({ classOption }) => {
     const sceneEl = useRef(null);
     useEffect(() => {
         const parallaxInstance = new Parallax(sceneEl.current, {
-        relativeInput: true,
+            relativeInput: true,
         })
-        
+
         parallaxInstance.enable();
 
         return () => parallaxInstance.disable();
@@ -25,16 +25,16 @@ const ContactInformation = ({ classOption }) => {
                     titleOption="section-title text-center mb-lg-12 mb-sm-8 mb-xs-8"
                     title="We are a full-service creative agency"
                     subTitle="Our team of designers, developers and creatives are perfectionists
-                    who love what they do and love where they work"
+                    who will help you with your project"
                 />
 
                 <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">
                     {contactData && contactData.map((single, key) => {
-                        return(
+                        return (
                             <div key={key} className="col mb-6" data-aos="fade-up">
                                 <ContactInfoItem data={single} key={key} />
                             </div>
-                        ); 
+                        );
                     })}
                 </div>
 
@@ -54,4 +54,4 @@ ContactInformation.defaultProps = {
     classOption: "section section-padding-t90-b100"
 };
 
-export default ContactInformation
+export default ContactInformation;

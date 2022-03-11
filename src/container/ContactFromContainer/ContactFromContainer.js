@@ -21,4 +21,4 @@ const ContactFromContainer = () => {
     )
 }
 
-export default ContactFromContainer
+export default ContactFromContainer;

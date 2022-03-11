@@ -1,6 +1,6 @@
-import {useState, useEffect, useRef} from "react";
+import { useState, useEffect, useRef } from "react";
 import SectionTitleTwo from '../../components/SectionTitles/SectionTitleTwo';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import Parallax from 'parallax-js';
 
@@ -10,9 +10,9 @@ const AboutFive = () => {
 
     useEffect(() => {
         const parallaxInstance = new Parallax(sceneEl.current, {
-        relativeInput: true,
+            relativeInput: true,
         })
-        
+
         parallaxInstance.enable();
 
         return () => parallaxInstance.disable();
@@ -46,9 +46,9 @@ const AboutFive = () => {
 
                     <div className="col-xl-5 col-lg-6 col-12" data-aos="fade-up" data-aos-delay="300">
                         <div className="about-content-area">
-                            <SectionTitleTwo 
+                            <SectionTitleTwo
                                 subTitle="Our solutions begin with brand research"
-                                title="We’ve worked alongside plenty of brands &amp; startups"
+                                title="We’ve worked alongside plenty of student &amp; startups"
                             />
 
                             <p>Our team of designers and developers are perfectionists who love what they do – we thrive off pushing the boundaries of our clients’ expectations and our own capabilities.</p>
